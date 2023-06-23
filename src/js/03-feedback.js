@@ -43,8 +43,7 @@ document.addEventListener('DOMContentLoaded', function() {
       console.log(savedFormState);
     } else {
    
-    emailInput.value = '';
-    messageInput.value = '';
+    localStorage.removeItem(storageKey);
    
   };
   });
