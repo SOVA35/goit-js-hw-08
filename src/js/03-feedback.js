@@ -25,11 +25,12 @@ document.addEventListener('DOMContentLoaded', function() {
 
   form.addEventListener('submit', function(event) {
     event.preventDefault();
-      event.currentTarget.reset();
+      
     const formState = {
       email: emailInput.value,
       message: messageInput.value
     };
+    event.currentTarget.reset();
     localStorage.removeItem(storageKey);
   console.log(formState);
   });
